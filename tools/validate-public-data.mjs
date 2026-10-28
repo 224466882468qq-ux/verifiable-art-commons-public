@@ -5,6 +5,7 @@ import {
 } from "node:fs";
 import { extname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { findForbiddenPatterns } from "./secret-patterns.mjs";
 
 const root = resolve(fileURLToPath(new URL("../", import.meta.url)));
 const forbiddenExtensions = new Set([
@@ -25,36 +26,6 @@ const forbiddenExtensions = new Set([
   ".tgz",
   ".zip"
 ]);
-const forbiddenPatterns = [
-  {
-    name: "private-key",
-    expression: /-----BEGIN (?:EC |RSA )?PRIVATE KEY-----/
-  },
-  {
-    name: "database-url",
-    expression: /postgres(?:ql)?:\/\//
-  },
-  {
-    name: "windows-user-path",
-    expression: /[A-Za-z]:\\Users\\/
-  },
-  {
-    name: "production-path",
-    expression: /\/var\/lib\/|\/etc\/systemd\/|\/opt\/onion/
-  },
-  {
-    name: "tor-address",
-    expression: /[a-z2-7]{56}\.onion/i
-  },
-  {
-    name: "local-service-url",
-    expression: /(?:127\.0\.0\.1|localhost):\d{2,5}/
-  },
-  {
-    name: "github-token",
-    expression: /\bgh[pousr]_[A-Za-z0-9]{20,}\b/
-  }
-];
 const ignoredDirectories = new Set([".git", "node_modules"]);
 const failures = [];
 
@@ -85,10 +56,8 @@ function checkFile(path, bytes) {
     failures.push(`${relativePath}: file exceeds 2 MiB`);
   }
   const text = readFileSync(path, "utf8");
-  for (const rule of forbiddenPatterns) {
-    if (rule.expression.test(text)) {
-      failures.push(`${relativePath}: ${rule.name}`);
-    }
+  for (const name of findForbiddenPatterns(text)) {
+    failures.push(`${relativePath}: ${name}`);
   }
 }
 
@@ -137,7 +106,8 @@ if (failures.length > 0) {
   process.exit(1);
 }
 console.log(JSON.stringify({
-  status: "safe",
+  status: "passed",
+  scope: "configured-public-data-rules",
   ruleId: status.ruleId,
   checkedFiles: "recursive",
   findings: 0

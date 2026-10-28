@@ -8,8 +8,10 @@ Run:
 npm run check
 ```
 
-The check validates the public status JSON and rejects common private-data
-patterns, secret file extensions, absolute host paths and Tor addresses.
+The check validates the public status JSON and rejects the configured set of
+common private-data patterns, secret file extensions, host paths, local service
+URLs and Tor addresses. Passing means that none of these patterns matched; it
+is not a guarantee that no sensitive information exists.
 
 ## Claims to verify
 

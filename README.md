@@ -1,12 +1,32 @@
 # 共证艺术网络 / Verifiable Art Commons
 
-寻找早期验证者、研究合作者、独立镜像节点和代码贡献者。
+### 为数字艺术建立可独立验证的公共档案
 
-共证艺术网络是一个数字艺术共同体候选原型。它尝试用公开规则、内容哈希、
-签名记录和独立节点，让作品来源、发行数量、归属和流转历史可以被第三方复核。
+### Building a public record for digital art that anyone can verify
+
+当作者、发行数量、归属和流转只能由单一平台解释时，公众很难独立核对。
+这个项目正在试验公开规则、内容哈希、签名记录和独立节点，让这些事实可以由
+不同的人重复验证。
+
+When authorship, edition size, ownership and transfer history can only be
+explained by one platform, the public cannot independently verify them. This
+project explores public rules, content hashes, signed records and independent
+nodes so that different people can reproduce the same checks.
 
 > 当前为 v1 候选原型，正式经济功能尚未开放。它不是法币、投资产品、交易所、
 > 拍卖平台或现实艺术品鉴定机构，也不承诺价格、收益、回购或现金兑换。
+
+## 服务可用性 / Service availability
+
+当前候选站点由维护者个人主机临时运行，关机、断网、Tor 故障或更换网络代理时
+可能离线。因此本仓库不发布临时网站地址，GitHub 仓库、Issue、Pull Request
+和这里公开的档案才是在线协作入口。
+
+The current candidate site runs on the maintainer's personal machine and may be
+offline during shutdowns, network outages, Tor failures or proxy changes. Its
+temporary address is intentionally not published here. The GitHub repository,
+Issues, Pull Requests and the public archive in this repository are the durable
+collaboration entry points.
 
 ## 当前状态
 
@@ -47,13 +67,21 @@
 
 ## 正在寻找
 
-1. 两台独立外部镜像测试机，验证网页镜像、Tor 入口和只读链数据。
-2. 一台由项目控制的外部 PostgreSQL 候选服务器，用于受控故障接管测试。
-3. 另一台物理机上的独立矿工，验证区块同步、断线恢复和重组。
-4. 研究女巫身份、公共随机数、P2P、数据库恢复、版权、隐私和经济机制的伙伴。
+1. 三位规则审阅者，检查 R47 的发行取整、费用去向和跨链结算边界。
+2. 一位独立复现者，在干净环境运行公开检查并提交可复现报告。
+3. 一台由志愿者自行控制的只读测试镜像，用来验证离线、恢复和内容一致性。
+4. PostgreSQL 故障接管、内容寻址存储、女巫身份、公共随机数和 P2P 研究。
 5. 安全审查、翻译、作品来源核验、七天异议处理和英文校对贡献者。
 
 镜像节点是自愿公共基础设施，不按在线时长凭空发币，也不承诺固定收益。
+志愿者始终保留自己服务器的管理权；项目不会要求移交服务器、SSH 控制权、
+密码、钱包或助记词。
+
+可以直接从首批任务开始：
+
+- [独立运行验证包并提交复现报告](https://github.com/224466882468qq-ux/verifiable-art-commons-public/issues/2)
+- [审阅 R47 的发行、费用和跨链结算边界](https://github.com/224466882468qq-ux/verifiable-art-commons-public/issues/4)
+- [设计主机关机、只读镜像与恢复测试方案](https://github.com/224466882468qq-ux/verifiable-art-commons-public/issues/3)
 
 ## 如何参与
 
@@ -64,6 +92,10 @@
 
 请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)、
 [GOVERNANCE.md](GOVERNANCE.md) 和 [SECURITY.md](SECURITY.md)。
+
+项目方不会索要助记词、私钥、钱包文件、验证码、付款或远程控制权。安全报告
+只使用 GitHub 私密漏洞报告，不要在公开 Issue 中发布未修复漏洞或真实服务器
+信息。
 
 ## 首批开放问题
 
@@ -78,12 +110,17 @@
 
 ## English
 
-Verifiable Art Commons is an early-stage digital-art governance prototype.
-The public economy is closed, both candidate chains are at height zero, and no
-assets have been issued. We are looking for independent reviewers, mirror-node
-operators, protocol researchers and code contributors.
+Verifiable Art Commons is an early-stage public-record and governance prototype
+for digital art. The public economy is closed, both candidate chains are at
+height zero, and no assets have been issued.
+
+We are looking for rule reviewers, an independent reproduction tester, a
+volunteer-operated read-only mirror, protocol and storage researchers, security
+reviewers, translators and documentation contributors.
 
 See [STATUS.md](STATUS.md) for the verified project boundary.
+The project will never ask for seed phrases, private keys, wallet files,
+verification codes, payments or remote control of a contributor's server.
 
 ## License
 

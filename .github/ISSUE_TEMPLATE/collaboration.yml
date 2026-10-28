@@ -7,8 +7,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Do not include server passwords, SSH keys, wallet files, database dumps,
-        private logs, personal identity documents or production credentials.
+        Public Issues must not contain public IP addresses, hostnames, cloud
+        account IDs, exact locations, SSH endpoints, root access, server
+        passwords, private keys, wallet files, database dumps, private logs,
+        personal identity documents or production credentials.
+
+        You keep control of your own server. The project does not request or
+        accept server ownership, remote administration or credential handover.
   - type: dropdown
     id: contribution
     attributes:
@@ -34,7 +39,10 @@ body:
     id: environment
     attributes:
       label: Non-sensitive environment summary
-      description: OS, approximate resources and network type. Do not reveal credentials.
+      description: >-
+        Use a coarse summary only, such as "Linux, 2 vCPU, read-only mirror".
+        Do not include an IP, hostname, provider account, exact region or SSH
+        address.
   - type: checkboxes
     id: safety
     attributes:
