@@ -1,0 +1,51 @@
+{
+  "format": "vac-public-rule-summary-v1",
+  "verifiedOn": "2026-10-28",
+  "ruleId": "rule-000047",
+  "ruleSha256": "0b629cf1069eef0bd42084073e657e929c4aba48a9d9e6cf6296d5405a342ba5",
+  "activation": {
+    "published": true,
+    "publicEconomyOpen": false,
+    "publicMiningOpen": false,
+    "publicMintingOpen": false,
+    "publicTransfersOpen": false
+  },
+  "artcoin": {
+    "networkId": "onion-art-v1",
+    "chainId": "oac-v1",
+    "genesisHash": "b469025989778765323c802143193636f1bf29527e36837b08df5b25b451c729",
+    "configHash": "5ad7c25c2c71ee69acb354fc639c1dc9657c5fc33a50d81ab16a663a96abded9",
+    "maximumSupplyMicro": 21000000000000,
+    "initialSubsidyMicro": 50000000,
+    "halvingIntervalBlocks": 210000,
+    "targetBlockMs": 600000,
+    "retargetIntervalBlocks": 2016
+  },
+  "artwork": {
+    "networkId": "onion-art-artworks-v1",
+    "chainId": "oac-artworks-v1",
+    "genesisHash": "d6c2bc1360468c14d41d48ad9d949a2b89fdfd666c196531ba589b1e52d4727b",
+    "configHash": "02441b973f122d4a66be2bcaa4b4ff119b2abe82992fb2dfdc6b8dddae9a3a13",
+    "transactionVersion": 1,
+    "legacyMintDisabledFromHeight": 1,
+    "issuesArtcoins": false
+  },
+  "fees": {
+    "ordinaryTransferMinerShareBps": 10000,
+    "nominationMaintenanceShareBps": 5000,
+    "nominationRecycleShareBps": 5000,
+    "artcoinGiftFeeMicroPerCoin": 1000,
+    "artworkTicketMicro": 1000,
+    "artworkTicketExtraNetworkFeeMicro": 0
+  },
+  "nodes": {
+    "automaticProtocolPayoutEnabled": false,
+    "mayMintArtcoins": false
+  },
+  "currentChainState": {
+    "artcoinHeight": 0,
+    "artcoinIssuedMicro": 0,
+    "artworkHeight": 0,
+    "artworkCount": 0
+  }
+}

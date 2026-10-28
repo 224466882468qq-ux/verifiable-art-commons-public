@@ -1,0 +1,38 @@
+name: Reproducibility report
+description: Report a deterministic test, mismatch or verification result
+title: "[Reproduction] "
+labels:
+  - reproducibility
+body:
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or release
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands and inputs
+      description: Use synthetic data and remove local paths.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety
+      options:
+        - label: I removed credentials, private data and production addresses.
+          required: true

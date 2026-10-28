@@ -1,0 +1,46 @@
+name: Collaboration or mirror-node proposal
+description: Offer research, review, translation or independent infrastructure
+title: "[Collaboration] "
+labels:
+  - collaboration
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include server passwords, SSH keys, wallet files, database dumps,
+        private logs, personal identity documents or production credentials.
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Contribution type
+      options:
+        - Independent mirror node
+        - PostgreSQL failover research
+        - Independent miner or chain validation
+        - Security review
+        - Copyright or provenance research
+        - Translation and accessibility
+        - Other technical contribution
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What can you verify, build or review?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Non-sensitive environment summary
+      description: OS, approximate resources and network type. Do not reveal credentials.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included private keys, passwords or personal data.
+          required: true
+        - label: I understand this is an early candidate, not an investment offer.
+          required: true
