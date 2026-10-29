@@ -1,0 +1,41 @@
+name: Verify signed public release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-release:
+    name: verify-release
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: "22"
+
+      - name: Run public checks
+        run: npm run check
+
+      - name: Verify release file hashes
+        run: npm run release:verify
+
+      - name: Verify detached Ed25519 signature
+        run: >-
+          ssh-keygen -Y verify
+          -f security/allowed_signers
+          -I verifiable-art-commons-release
+          -n verifiable-art-commons
+          -s release/release-manifest.json.sig
+          < release/release-manifest.json

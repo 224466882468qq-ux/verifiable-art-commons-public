@@ -22,15 +22,20 @@ The project is a v1 candidate prototype. No public economy is active.
 | Cross-machine failover proven | No |
 | Official asset takeover | Not started |
 
-## What is implemented
+## Publicly reproducible in this repository
 
-- Independent Artcoin and artwork chain design.
-- Content hashes, ownership records and append-only review history.
-- Signed rule registry and public rule verification model.
-- Public random-number allocation design using drand.
-- Desktop miner prototype and chain synchronization tests.
-- PostgreSQL backup manifests and isolated restore checks.
-- Community mirror-node design and signed release validation.
+- Public candidate-state data and its consistency tests.
+- Configuration leak-pattern checks with synthetic regression tests.
+- Standard MIT licensing for included code and documentation.
+- Isolated read-only GitHub checks.
+- Public Ed25519 release-key fingerprint and signed release verification flow.
+
+## Internal prototype claims not yet reproducible from this public archive
+
+- Desktop miner and cross-process chain synchronization.
+- Full evidence for PostgreSQL backup and restore checks.
+- Rule-signing implementation and production signing keys.
+- Independent external-node and cross-machine failover tests.
 
 Implementation does not mean public activation. Public writes remain disabled
 until consensus, independent-node, database-recovery, content-storage and legal

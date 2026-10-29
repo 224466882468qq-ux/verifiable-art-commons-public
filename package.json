@@ -6,7 +6,9 @@
   "scripts": {
     "validate": "node tools/validate-public-data.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "npm run validate && npm test"
+    "check": "npm run validate && npm test",
+    "release:manifest": "node tools/build-release-manifest.mjs",
+    "release:verify": "node tools/verify-public-release.mjs"
   },
   "engines": {
     "node": ">=22"

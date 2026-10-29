@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/224466882468qq-ux/verifiable-art-commons-public/security/advisories/new
+    about: Do not disclose unpatched vulnerabilities or credentials in a public Issue.
+  - name: Read the participation and server-safety boundary
+    url: https://github.com/224466882468qq-ux/verifiable-art-commons-public/blob/main/SECURITY.md
+    about: Contributors keep control of their own servers and must never submit credentials.

@@ -97,6 +97,15 @@ collaboration entry points.
 只使用 GitHub 私密漏洞报告，不要在公开 Issue 中发布未修复漏洞或真实服务器
 信息。
 
+## 验证发布
+
+公开检查在无密钥的 GitHub Runner 中运行。正式发布记录使用独立的 Ed25519
+密钥签名；仓库只包含公钥、指纹、清单和 detached signature，不包含私钥。
+
+验证方法见 [security/README.md](security/README.md)。GitHub 原生的
+`Verified` 标记还要求把同一公钥单独登记到维护者 GitHub 账号，未登记前以
+`ssh-keygen -Y verify` 的结果为准。
+
 ## 首批开放问题
 
 - 如何在不采集生物身份的前提下降低批量账号影响？
@@ -124,6 +133,7 @@ verification codes, payments or remote control of a contributor's server.
 
 ## License
 
-This repository's original code and documentation are released under the MIT
-License unless a file states otherwise. Project names, logos, artworks and
-artwork previews are not included in this first publication.
+This repository's included code and documentation are released under the
+standard MIT License. See `NOTICE` for the scope of names, logos, artwork and
+third-party material. External contributions must be authorized for submission
+under the same license.

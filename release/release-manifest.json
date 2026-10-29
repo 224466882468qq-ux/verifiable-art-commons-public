@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "project": "Verifiable Art Commons",
+  "version": "0.1.0-public.1",
+  "releaseTag": "v0.1.0-public.1",
+  "createdAt": "2026-10-29T05:51:03Z",
+  "baseCommit": "8c2219c07a361e0e8089a2ba32c97bc6c305380f",
+  "ruleId": "rule-000047",
+  "signing": {
+    "algorithm": "Ed25519",
+    "identity": "verifiable-art-commons-release",
+    "namespace": "verifiable-art-commons",
+    "fingerprint": "SHA256:M8k7jouMOhYU8ekX3g54qj7J0kAPnAwDbTznmPE498Q",
+    "publicKey": "security/release-signing-key.pub"
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 31,
+      "sha256": "42baf84cd175512ae537bda95e2ad9912fbe162d46e0ad18523a44cf5ed5c2b0"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/collaboration.yml",
+      "bytes": 1865,
+      "sha256": "6cb3282abf0db2932472f6395181907b46f312487337074eafe5af267730d96d"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 533,
+      "sha256": "24c5a01d3a8929a9c405b88a48db939c6bed369b94abdf8a9e8b0d9e6f5d3b39"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/reproducibility-report.yml",
+      "bytes": 892,
+      "sha256": "aee1ab7dabef868a75aa2f4e32f28e92dfae72904069e48a53ffcb4552467207"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/technical-proposal.yml",
+      "bytes": 1012,
+      "sha256": "b224d87ff4f10e2220f5e4161aeae6c9688f4e0fcfa764a4bfa00eb877f52a11"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "bytes": 601,
+      "sha256": "95561ebb7e148e44a9e2d944142074e10fcdf1ae3bf4af7126a36a4ff5490b69"
+    },
+    {
+      "path": ".github/workflows/public-checks.yml",
+      "bytes": 751,
+      "sha256": "9ff96577c2ea1e8480cf7517b85a0d895833cb8ec385c65610d2ef1179899735"
+    },
+    {
+      "path": ".github/workflows/release-verification.yml",
+      "bytes": 980,
+      "sha256": "935a786eff891f3d8ee6e412dc6ec9f1c8d157aac6a76dacfa2e6aafc8b8b3ef"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 164,
+      "sha256": "6f9f387fed0de300e3e8b4afc40373f1a75bea6410597de656c64a9e2a249436"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 1916,
+      "sha256": "b685e2c6b468ad2649c2e8111b560086074fc89511b37dacc52ffcb9918ee910"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "bytes": 788,
+      "sha256": "d953094c84c866f51c8860c6af9a70ee22c179b278dd97c76dd61976f9969f3e"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1909,
+      "sha256": "00ee15bd1dc0787df73bd698d6bf809c52b514c2fd9b94804421a5307bc69d4c"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "bytes": 1682,
+      "sha256": "5a9721ecbfc612fdf6cca020ef608dd5f56315872e82246fcaaf653c648e1efc"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1092,
+      "sha256": "d256623a63ce2f1fc4023d35d9aabba6ee0dee13ad37f3ecf7ed7686b754b366"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 590,
+      "sha256": "6614f0189b02a1f0d06c68fca81fd0ae15a7b5e02b56113b57bd7b13a9576e13"
+    },
+    {
+      "path": "OPEN-QUESTIONS.md",
+      "bytes": 2035,
+      "sha256": "3360481425609cc34e614a7b5b360755e39d4e182aa9a5e4e5e9979e1ec70374"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6499,
+      "sha256": "65000fd5abd3fbd090004a4fc10c60b25594060d6d5cf65ce58679b1a2723082"
+    },
+    {
+      "path": "RULES.md",
+      "bytes": 2865,
+      "sha256": "4dbc31cd713aad6b3ff61ee606c2ba395b53dff351e2760dd88d858f6d5d9005"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1320,
+      "sha256": "bcb5e860963d724f26b94bce718c499bdd852312b8313fd4e64bbeaa5a14111a"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 2305,
+      "sha256": "ced21e3ea539c3a0b61e4e59a74536eded5c1be4fecde2e9e88825936df6c249"
+    },
+    {
+      "path": "data/rule-000047-public.json",
+      "bytes": 1635,
+      "sha256": "04268dea177cb5fd77a3bc3461329e50ab7d31dd4e52085957f61ee7c2f0a6b8"
+    },
+    {
+      "path": "docs/faq-zh.md",
+      "bytes": 1720,
+      "sha256": "f9a1daacc8dd07a164ab346a4a4a28e9c0c75284250260cf16f7fe3e2da288c9"
+    },
+    {
+      "path": "docs/twenty-four-temporal-seats.md",
+      "bytes": 1202,
+      "sha256": "9d8a9c51d00ca98c645affaf6fa3924c695c7b0ef895c7104cf62e968bd5fe18"
+    },
+    {
+      "path": "docs/verification.md",
+      "bytes": 980,
+      "sha256": "a792c16fd47e1d87cff559407c4700a7f30485911b2dfb506775728369717137"
+    },
+    {
+      "path": "package.json",
+      "bytes": 436,
+      "sha256": "05c8d58475594c9571691a45d5620e865dcf8beca0949d546d58df4d1ec828d3"
+    },
+    {
+      "path": "release/README.md",
+      "bytes": 427,
+      "sha256": "f6159bff679260c3699346192fb6411e936e8f8bcf1ae518c727ea9f53f04a1a"
+    },
+    {
+      "path": "security/README.md",
+      "bytes": 1890,
+      "sha256": "ae55d9d5aea6f1dd2fb72efadf049b298824e0f5332023ba00eb6f8c268c4f01"
+    },
+    {
+      "path": "security/allowed_signers",
+      "bytes": 160,
+      "sha256": "d2a15049fa8be559ac8b4a7f12d8bb71c48863910ffc65bb7cf7126ae775d657"
+    },
+    {
+      "path": "security/release-signing-key.pub",
+      "bytes": 129,
+      "sha256": "c941ebaed181ef3e334b22d1602bb527258cf9345ca20e7852e2efc304dad003"
+    },
+    {
+      "path": "tests/public-data.test.mjs",
+      "bytes": 1973,
+      "sha256": "591480962d52a90c2ab3506df069d4b9beea1e721aad3cc0b6ea14eefc9fff50"
+    },
+    {
+      "path": "tests/secret-patterns.test.mjs",
+      "bytes": 1221,
+      "sha256": "cf59c349699d7e235c312824409d6941db497685052ccf094226c42af4cc2e9a"
+    },
+    {
+      "path": "tools/build-release-manifest.mjs",
+      "bytes": 2163,
+      "sha256": "252453f142a2232819ef46dc938668dd0f6dbf2e6a76bec552db1beaf6316844"
+    },
+    {
+      "path": "tools/secret-patterns.mjs",
+      "bytes": 1086,
+      "sha256": "0cbbc69c0909c5b4b5ec11cdc51fabdec21b250b0daae639375cac4308351801"
+    },
+    {
+      "path": "tools/validate-public-data.mjs",
+      "bytes": 3154,
+      "sha256": "3df0c5d73958622377a6407a7a5f98a00bf1840d1bf78faaadcde6b6dc7ff89d"
+    },
+    {
+      "path": "tools/verify-public-release.mjs",
+      "bytes": 1115,
+      "sha256": "ed37fc77fe75287cf22e4fc5b0ed5d092a8fc4052c26313fa1a7ac21dec82d22"
+    }
+  ]
+}

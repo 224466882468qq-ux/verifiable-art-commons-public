@@ -38,6 +38,8 @@ npm run check
 6. Describe compatibility impact and any new trust assumptions.
 7. Do not add deployment credentials, binary wallets, private infrastructure
    data or copyrighted artwork without a separate license review.
+8. Sign off every commit with `git commit -s` to certify that you have the
+   right to submit the contribution under the repository's MIT License.
 
 ## Consensus and economic changes
 
